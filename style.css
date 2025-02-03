@@ -1,15 +1,57 @@
+/* Background Styling */
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Arial', sans-serif;
     text-align: center;
-    background: #282c36;
+    background: url('https://source.unsplash.com/1600x900/?fireworks,celebration') no-repeat center center fixed;
+    background-size: cover;
     color: white;
     margin: 0;
-    padding: 20px;
+    padding: 0;
 }
+
+/* Countdown Container */
 .countdown-container {
-    margin-top: 50px;
+    margin-top: 15%;
+    background: rgba(0, 0, 0, 0.6);
+    padding: 20px;
+    display: inline-block;
+    border-radius: 15px;
+    box-shadow: 0px 0px 20px rgba(255, 255, 255, 0.5);
+    animation: fadeIn 2s ease-in-out;
 }
+
+/* Countdown Timer */
 #countdown {
-    font-size: 2em;
+    display: flex;
+    justify-content: center;
     margin-top: 20px;
+}
+
+/* Time Boxes */
+.time-box {
+    background: rgba(255, 255, 255, 0.2);
+    padding: 20px;
+    margin: 10px;
+    border-radius: 10px;
+    font-size: 2em;
+    font-weight: bold;
+    box-shadow: 0px 0px 10px rgba(255, 255, 255, 0.3);
+    transition: transform 0.2s;
+}
+
+.time-box:hover {
+    transform: scale(1.1);
+}
+
+/* Small Text */
+small {
+    display: block;
+    font-size: 0.6em;
+    color: #ddd;
+}
+
+/* Fade-in Animation */
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
 }
